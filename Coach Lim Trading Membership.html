@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Coach Lim Trading Membership | Understand The Market</title>
+<meta name="description" content="Structured trading education for traders who want to understand market behaviour, manage risk, and develop independent decision-making.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--w:#fff;--ice:#F0F8FF;--royal:#145DA0;--blue:#278DE0;--sky:#70C1F0;--ink:#172B42;--soft:rgba(23,43,66,.68);--line:rgba(20,93,160,.16);--mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{margin:0;background:var(--w);color:var(--ink);font:400 17px/1.65 "Space Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif;overflow-x:hidden}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+a{color:inherit}:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+h1,h2,h3{font-family:"Chakra Petch","Arial Narrow",sans-serif;text-transform:uppercase;margin:0 0 .4em;line-height:1.05;letter-spacing:.005em;font-weight:700}
+h1{font-size:clamp(2.3rem,6vw,4.4rem)}h2{font-size:clamp(1.9rem,4.2vw,3.1rem)}h3{font-size:1.2rem;line-height:1.2}
+.t2{color:var(--royal)}
+p{margin:0 0 1em}.soft{color:var(--soft)}
+.eyebrow{font:500 .78rem var(--mono);letter-spacing:.3em;text-transform:uppercase;color:var(--royal);opacity:.8;margin:0 0 16px}
+.ph{background:rgba(112,193,240,.28);padding:1px 6px;font-size:.88em;border-radius:4px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+.sec{position:relative;padding:96px 0;overflow:hidden}
+.ice{background:linear-gradient(180deg,var(--ice),#fff 120%)}
+.grid-bg::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent 0 59px,rgba(20,93,160,.05) 59px 60px),repeating-linear-gradient(90deg,transparent 0 59px,rgba(20,93,160,.05) 59px 60px);pointer-events:none}
+.shape::after{content:"";position:absolute;right:-8%;top:8%;width:46%;height:60%;background:linear-gradient(135deg,rgba(112,193,240,.22),rgba(255,255,255,0));clip-path:polygon(25% 0,100% 18%,75% 100%,0 70%);pointer-events:none}
+.sec>.wrap{position:relative;z-index:1}
+.c{text-align:center}.c p{margin-left:auto;margin-right:auto}
+/* pill CTA */
+.pill{display:inline-flex;align-items:center;gap:14px;background:linear-gradient(180deg,#1b72bd,var(--royal));color:#fff;font:600 .95rem "Chakra Petch",sans-serif;letter-spacing:.18em;text-decoration:none;padding:17px 34px;border-radius:99px;border:1px solid var(--blue);box-shadow:inset 0 1px 0 rgba(255,255,255,.45),0 10px 26px rgba(20,93,160,.3);transition:transform .2s,box-shadow .2s;cursor:pointer;text-transform:uppercase}
+.pill:hover{transform:translateY(-2px);box-shadow:inset 0 1px 0 rgba(255,255,255,.45),0 14px 30px rgba(20,93,160,.38)}
+.pill.light{background:#fff;color:var(--royal);border-color:var(--sky);box-shadow:0 8px 22px rgba(20,93,160,.14)}
+.lnk{font-weight:700;color:var(--royal);text-decoration:none;border-bottom:2px solid var(--sky)}
+/* nav */
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.86);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px;gap:18px}
+.brand{font:700 .95rem/1.1 "Chakra Petch",sans-serif;text-decoration:none;letter-spacing:.04em;text-transform:uppercase}.brand em{display:block;font-style:normal;color:var(--blue)}
+nav ul{display:flex;gap:26px;list-style:none;margin:0;padding:0}nav a{text-decoration:none;font-size:.92rem;font-weight:500;color:var(--soft)}nav a:hover{color:var(--royal)}
+.nav .pill{padding:11px 22px;font-size:.78rem;letter-spacing:.14em}
+.burger{display:none;background:#fff;border:1px solid var(--line);color:var(--ink);border-radius:12px;width:44px;height:44px;font-size:1.25rem;cursor:pointer}
+/* frame (glass bezel) */
+.frame{border:1px solid #fff;background:rgba(255,255,255,.6);border-radius:30px;padding:9px;box-shadow:0 24px 60px rgba(20,93,160,.16),0 0 0 1px var(--line)}
+.frame>.in{border-radius:22px;background:linear-gradient(180deg,#fff,var(--ice));overflow:hidden}
+/* hero */
+.hero{padding-top:72px;padding-bottom:70px}
+.hero h1 span{display:block}.hero .lead{max-width:56ch;font-size:1.1rem}
+.note{font-size:.82rem;color:var(--soft);margin-top:16px}
+.stage{display:grid;grid-template-columns:1fr minmax(280px,340px) 1fr;gap:40px;align-items:center;margin-top:56px}
+.side{font:500 .72rem/2 var(--mono);letter-spacing:.25em;color:var(--royal);text-align:left}.side.r{text-align:right}.side hr{width:44px;border:0;border-top:1px solid var(--sky);margin:10px 0}.side.r hr{margin-left:auto}
+.phone{background:var(--ink);border-radius:46px;padding:11px;box-shadow:0 30px 60px rgba(23,43,66,.28),inset 0 0 0 2px rgba(255,255,255,.18)}
+.screen{background:var(--ice);border-radius:36px;padding:26px 14px 20px;min-height:470px;text-align:left}
+.screen h4{margin:0 0 12px;font:700 1rem "Chakra Petch",sans-serif;text-transform:uppercase;text-align:center}
+.lcard{background:#fff;border-radius:16px;padding:13px 14px;margin-bottom:10px;box-shadow:0 4px 14px rgba(20,93,160,.08);font-size:.84rem}
+.lcard b{display:block;font-size:.9rem}.lcard small{color:var(--soft)}
+.bar{height:6px;background:rgba(112,193,240,.3);border-radius:9px;margin-top:8px;overflow:hidden}.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--sky),var(--blue))}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);margin-top:60px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stats div{padding:26px 10px;text-align:center}.stats div+div{border-left:1px solid var(--line)}
+.stats b{display:block;font:500 clamp(2rem,4vw,2.8rem)/1 "Chakra Petch",sans-serif}.stats span{font:500 .72rem var(--mono);letter-spacing:.18em;color:var(--royal);text-transform:uppercase}
+/* swipe cards */
+.swipe{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:48px}
+.card{background:rgba(255,255,255,.8);border:1px solid var(--line);border-radius:24px;padding:18px;box-shadow:0 14px 34px rgba(20,93,160,.08)}
+.card .th{aspect-ratio:4/3;border-radius:16px;overflow:hidden;margin-bottom:16px;background:var(--ice)}
+.card .th svg{display:block;width:100%;height:100%}
+.card .num{font:500 .74rem var(--mono);letter-spacing:.22em;color:var(--blue)}
+.card h3{margin:6px 0 8px}.card p{font-size:.93rem;color:var(--soft);margin-bottom:.8em}
+.pcard{padding:26px 22px}.pcard .orb{margin-bottom:18px}
+/* orbs & steps */
+.orb{width:68px;height:68px;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 30% 25%,#fff,#dcefff 55%,#b6dbf6);box-shadow:0 10px 22px rgba(20,93,160,.18),inset 0 -3px 6px rgba(20,93,160,.1);flex:none}
+.orb svg{width:28px;height:28px;stroke:var(--royal);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.how{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start;margin-top:56px}
+.steps{list-style:none;margin:0;padding:0}
+.step{display:flex;gap:22px;position:relative;padding-bottom:30px}
+.step:not(:last-child)::after{content:"";position:absolute;left:33px;top:76px;bottom:6px;width:1px;background:var(--line)}
+.step .n{font:500 .78rem var(--mono);letter-spacing:.2em;color:var(--soft)}.step h3{margin:2px 0 4px}.step p{margin:0;color:var(--soft);font-size:.95rem}
+.ex{position:sticky;top:96px}.ex .hd{font:500 .72rem var(--mono);letter-spacing:.25em;text-align:center;padding:16px;color:var(--royal);border-bottom:1px solid var(--line)}
+.ex .bd{padding:18px 22px 22px}.ex svg{width:100%;height:auto;display:block}
+.ex .lp{border-top:1px solid var(--line);margin-top:14px;padding-top:14px;font-size:.92rem;color:var(--soft)}.ex .lp b{display:block;font:500 .72rem var(--mono);letter-spacing:.2em;color:var(--ink);margin-bottom:4px}
+/* coach */
+.coach{display:grid;grid-template-columns:5fr 6fr;gap:64px;align-items:center}
+.portrait{aspect-ratio:4/5;display:grid;place-items:center;text-align:center;padding:24px;color:var(--soft);font-size:.92rem;background:linear-gradient(160deg,var(--ice),#cfe8fa)}
+.big{font:600 clamp(1.3rem,2.4vw,1.8rem)/1.25 "Chakra Petch",sans-serif;max-width:24ch;margin-bottom:.8em}
+/* modules */
+.mods{list-style:none;margin:36px 0 0;padding:0;counter-reset:m;display:grid;grid-template-columns:1fr 1fr;gap:0 48px}
+.mods li{counter-increment:m;position:relative;padding:20px 0 20px 56px;border-bottom:1px solid var(--line)}
+.mods li::before{content:counter(m,decimal-leading-zero);position:absolute;left:0;top:20px;font:500 .9rem var(--mono);color:var(--blue)}
+.mods b{display:block;font:600 1.05rem "Chakra Petch",sans-serif}.mods span{font-size:.92rem;color:var(--soft)}
+/* cases */
+.cases{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:48px}
+.ba{display:grid;grid-template-columns:1fr 1fr;gap:6px;aspect-ratio:4/3}.ba div{position:relative;background:#fff;border-radius:10px;overflow:hidden;border:1px solid var(--line)}.ba svg{width:100%;height:100%;display:block}
+.ba em{position:absolute;left:6px;top:5px;font:600 .62rem var(--mono);letter-spacing:.15em;font-style:normal;color:var(--royal);background:rgba(255,255,255,.85);padding:1px 5px;border-radius:4px}
+.case .ctx{font:500 .72rem var(--mono);letter-spacing:.12em;color:var(--soft)}
+.case .lp{border-left:3px solid var(--sky);padding-left:12px;margin:12px 0;font-size:.92rem}
+/* plans */
+.sub3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin:40px 0 0;text-align:left}.sub3 div{border-top:2px solid var(--sky);padding-top:12px;font-size:.92rem;color:var(--soft)}.sub3 b{display:block;color:var(--ink);font:600 1rem "Chakra Petch",sans-serif;text-transform:uppercase}.sub3 i{font-style:normal;color:var(--royal);font-weight:700}
+.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:56px;align-items:stretch;text-align:left}
+.plan{background:#fff;border:1px solid var(--line);border-radius:28px;padding:34px 28px;display:flex;flex-direction:column;box-shadow:0 14px 34px rgba(20,93,160,.08)}
+.plan.rec{border:2px solid var(--blue);box-shadow:0 26px 60px rgba(39,141,224,.24);transform:translateY(-14px);background:linear-gradient(180deg,#fff,var(--ice))}
+.plan .pos{font:500 .74rem var(--mono);letter-spacing:.22em;color:var(--blue)}
+.plan h3{font-size:1.9rem;margin:6px 0 0}
+.price{font:700 3rem/1 "Chakra Petch",sans-serif;margin:14px 0 8px}.price small{font:400 1rem "Space Grotesk";color:var(--soft)}
+.plan p{font-size:.94rem;color:var(--soft)}
+.plan ul{list-style:none;padding:0;margin:6px 0 28px;flex:1}.plan li{padding:7px 0 7px 26px;position:relative;font-size:.93rem}
+.plan li::before{content:"✓";position:absolute;left:0;color:var(--blue);font-weight:700}.plan li.no{color:var(--soft);opacity:.7}.plan li.no::before{content:"✕";color:var(--soft)}
+.plan .pill{justify-content:center;padding:15px 18px;letter-spacing:.12em;font-size:.85rem}
+.plan:not(.rec) .pill{background:#fff;color:var(--royal);border-color:var(--blue);box-shadow:none}.plan:not(.rec) .pill:hover{background:var(--ice)}
+.fine{font-size:.85rem;color:var(--soft);margin-top:26px;max-width:none}
+.tw{overflow-x:auto;margin-top:40px;background:#fff;border:1px solid var(--line);border-radius:20px}table{border-collapse:collapse;width:100%;min-width:520px;font-size:.93rem}
+th,td{padding:14px 14px;text-align:center;border-bottom:1px solid var(--line)}th:first-child,td:first-child{text-align:left}th{font:600 .95rem "Chakra Petch",sans-serif;text-transform:uppercase;color:var(--royal)}tr:last-child td{border-bottom:0}
+/* cycle faq */
+.cycle{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:44px;text-align:left}.cycle div{border-top:2px solid var(--blue);padding-top:14px}.cycle b{font:500 .78rem var(--mono);letter-spacing:.18em;color:var(--royal)}.cycle p{margin:6px 0 0;color:var(--soft);font-size:.95rem}
+.faq{max-width:820px;margin:40px auto 0;text-align:left}details{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;padding:22px 44px 22px 0;font:600 1.1rem "Chakra Petch",sans-serif;list-style:none;position:relative}summary::-webkit-details-marker{display:none}
+summary::after{content:"+";position:absolute;right:4px;top:15px;font-size:1.8rem;color:var(--blue);transition:transform .2s}details[open] summary::after{transform:rotate(45deg)}
+details p{padding-bottom:20px;margin:0;color:var(--soft)}
+footer{background:var(--ice);border-top:1px solid var(--line);padding:56px 0 40px;font-size:.9rem}
+.fg{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:32px}footer h4{margin:0 0 10px;font:600 .95rem "Chakra Petch",sans-serif;text-transform:uppercase}footer ul{list-style:none;margin:0;padding:0}footer li{padding:4px 0}footer a{color:var(--soft);text-decoration:none}footer a:hover{color:var(--royal)}
+.disc{margin-top:34px;padding-top:20px;border-top:1px solid var(--line);font:500 .7rem/1.7 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--soft);text-align:center}
+.sticky{display:none}
+@media(max-width:1000px){.swipe{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:16px;margin-right:-22px;padding:4px 22px 18px 0;-webkit-overflow-scrolling:touch}.swipe .card{flex:0 0 78%;max-width:320px;scroll-snap-align:start}
+.how,.coach{grid-template-columns:1fr;gap:40px}.ex{position:static}.mods{grid-template-columns:1fr}.cases,.plans,.sub3{grid-template-columns:1fr}.plan.rec{transform:none}.cycle{grid-template-columns:1fr 1fr}.fg{grid-template-columns:1fr 1fr}.stage{grid-template-columns:1fr}.side{display:none}.phone{max-width:320px;margin:0 auto}}
+@media(max-width:860px){nav{display:none;position:absolute;top:68px;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);padding:6px 22px 22px}nav.open{display:block}nav ul{flex-direction:column;gap:0}nav a{display:block;padding:14px 0;border-bottom:1px solid var(--line);font-size:1rem}.burger{display:block}.nav>.pill{display:none}.sec{padding:68px 0}
+.sticky{display:flex;position:fixed;left:14px;right:14px;bottom:calc(12px + env(safe-area-inset-bottom,0px));z-index:45;justify-content:center}footer{padding-bottom:100px}}
+@media(max-width:520px){.cycle{grid-template-columns:1fr}.stats b{font-size:1.8rem}.stats span{font-size:.6rem;letter-spacing:.1em}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="brand" href="#home" id="brand"></a>
+<button class="burger" id="burger" aria-label="Buka menu" aria-expanded="false" aria-controls="menu">☰</button>
+<nav id="menu" aria-label="Utama"><ul>
+<li><a href="#home">Home</a></li><li><a href="#about">About Coach Lim</a></li><li><a href="#hub">Learning Hub</a></li><li><a href="#cases">Market Case Studies</a></li><li><a href="#membership">Membership</a></li><li><a href="#faq">FAQ</a></li></ul></nav>
+<a class="pill" href="#membership">Join Membership</a>
+</div></header>
+
+<main>
+<section class="sec ice grid-bg shape hero c" id="home"><div class="wrap">
+<p class="eyebrow">Structured trading education</p>
+<h1>Understand The Market.<span class="t2">Develop Your Trading Edge.</span></h1>
+<p class="lead soft">Structured trading education for traders who want to understand market behaviour, manage risk, and develop independent decision-making.</p>
+<a class="pill" href="#membership">Join Membership <span aria-hidden="true">→</span></a>
+<p class="note">Kandungan pendidikan sahaja. Tiada signal. Tiada jaminan keuntungan.</p>
+<div class="stage">
+<div class="side"><p style="margin:0">STRUCTURED<br>LEARNING.</p><hr><p style="margin:0">REAL<br>UNDERSTANDING.</p></div>
+<div class="phone" role="img" aria-label="Ilustrasi paparan pembelajaran membership"><div class="screen">
+<h4>Learning Hub</h4>
+<div class="lcard"><b>Modul 3 · Candlesticks &amp; Price Behaviour</b><small>Dalam pembelajaran</small><div class="bar"><i style="width:60%"></i></div></div>
+<div class="lcard"><b>Latihan carta</b><small>Kenal pasti struktur pasaran</small><div class="bar"><i style="width:35%"></i></div></div>
+<div class="lcard"><b>Kajian kes minggu ini</b><small>Contoh pembelajaran</small></div>
+<div class="lcard"><b>Semakan jurnal</b><small>Review · Elite</small></div>
+<p style="font-size:.66rem;text-align:center;color:var(--soft);margin:12px 0 0">Ilustrasi sahaja</p></div></div>
+<div class="side r"><p style="margin:0">PRACTICAL<br>CASE STUDIES.</p><hr><p style="margin:0">RISK<br>FIRST.</p></div>
+</div>
+<div class="stats"><div><b>8</b><span>Modul Foundation</span></div><div><b>6</b><span>Peringkat belajar</span></div><div><b>3</b><span>Tahap membership</span></div></div>
+</div></section>
+
+<section class="sec" id="about"><div class="wrap coach">
+<div class="frame"><div class="in portrait"><div>Potret Coach Lim<br><span class="ph">[Letakkan foto sebenar Coach Lim]</span></div></div></div>
+<div>
+<p class="eyebrow">About Coach Lim</p>
+<h2>Meet Coach Lim.</h2>
+<p class="big">Trader yang faham sebab di sebalik keputusan, bukan hanya entry.</p>
+<p><span class="ph">[Biografi ringkas — pemilik perlu bekalkan. Tiada pengalaman, kelayakan atau rekod dimasukkan.]</span></p>
+<p><b>Falsafah pengajaran.</b> Trader perlu faham kenapa sesuatu keputusan dibuat, bukan sekadar mengikut analisis orang lain. Matlamatnya ialah pembuat keputusan yang bebas dan berdisiplin.</p>
+<p><b>Pendekatan.</b> Pendidikan trading berstruktur dengan fokus kepada pemahaman pasaran praktikal dan pengurusan risiko.</p>
+<a class="lnk" href="#about">Baca lanjut tentang Coach Lim</a> <span class="ph">[Pautan halaman About penuh]</span>
+</div></div></section>
+
+<section class="sec ice grid-bg c"><div class="wrap">
+<p class="eyebrow">Kenapa trader tersekat</p>
+<h2>Kenapa Ramai Trader Masih <span class="t2">Sukar Untuk Konsisten?</span></h2>
+<div class="swipe" id="prob" style="text-align:left"></div>
+<p style="max-width:62ch;font-weight:500;margin-top:20px">Masalahnya bukan semestinya kekurangan ilmu. Kadangkala, trader memerlukan struktur untuk memahami dan menggunakan ilmu yang sudah dipelajari.</p>
+</div></section>
+
+<section class="sec" id="approach"><div class="wrap">
+<div class="c"><p class="eyebrow">How it works</p><h2>Belajar Trading Melalui <span class="t2">Proses Yang Sistematik.</span></h2></div>
+<div class="how">
+<ol class="steps" id="steps"></ol>
+<div class="frame ex"><div class="in"><div class="hd">CONTOH PEMBELAJARAN · ILUSTRASI</div><div class="bd"><div id="exchart"></div>
+<div class="lp"><b>PELAJARAN UTAMA</b>Menilai keadaan pasaran dan ruang risiko sebelum memutuskan sama ada sesuatu setup layak. <span class="ph">[Gantikan dengan kes sebenar]</span></div></div></div></div>
+</div></div></section>
+
+<section class="sec ice grid-bg" id="hub"><div class="wrap">
+<div class="c"><p class="eyebrow">Learning Hub</p><h2>One Learning <span class="t2">Ecosystem.</span></h2><p class="soft" style="max-width:52ch">Fahami. Aplikasi. Semak. Semuanya di satu tempat. Tajuk dan huraian ialah kandungan contoh <span class="ph">[ganti dengan bahan sebenar]</span>.</p></div>
+<div class="swipe" id="hubgrid" style="grid-template-columns:repeat(4,1fr)"></div>
+</div></section>
+
+<section class="sec" id="curriculum"><div class="wrap">
+<div class="c"><p class="eyebrow">Kurikulum Foundation</p><h2>Build Your Trading Foundation <span class="t2">Step By Step.</span></h2><p class="soft">Pembelajaran praktikal dengan contoh carta sebenar, latihan dan penilaian.</p></div>
+<ol class="mods" id="mods"></ol>
+<p class="note c">Pelan program (roadmap). <span class="ph">[Pemilik: sahkan modul yang sudah siap sebelum diterbitkan]</span></p>
+</div></section>
+
+<section class="sec ice grid-bg shape c" id="cases"><div class="wrap">
+<p class="eyebrow">Market case studies</p>
+<h2>Learn How The Market <span class="t2">Behaves In Real Situations.</span></h2>
+<p class="soft" style="max-width:58ch">Pratonton kajian kes untuk pembelajaran. Ia bukan rekod trade dan tiada hasil trading dituntut.</p>
+<div class="cases" id="casegrid" style="text-align:left"></div>
+</div></section>
+
+<section class="sec" id="membership"><div class="wrap c">
+<p class="eyebrow">Membership</p>
+<h2>Pilih Tahap Yang <span class="t2">Sesuai Dengan Anda.</span></h2>
+<p class="soft" style="max-width:56ch">Harga bulanan. Kandungan pendidikan sahaja, tiada signal dan tiada jaminan keuntungan.</p>
+<div class="sub3"><div><b>Complete Beginner</b>“Tak tahu mula dari mana.” Sesuai: <i>Foundation</i></div><div><b>Struggling Trader</b>“Tahu konsep, tapi tak tahu cara guna.” Sesuai: <i>Foundation atau Pro</i></div><div><b>Inconsistent Trader</b>“Tahu apa nak buat, sukar laksana.” Sesuai: <i>Pro atau Elite</i></div></div>
+<div class="plans" id="plans"></div>
+<p class="fine">Pro diberi penekanan sebagai panduan untuk trader yang mahu mengaplikasikan konsep, bukan berdasarkan data jualan. Bilangan sesi live dan kapasiti Elite tertakluk kepada pengesahan pemilik.</p>
+<div class="tw"><table id="cmp"></table></div>
+</div></section>
+
+<section class="sec ice grid-bg c"><div class="wrap">
+<p class="eyebrow">Pengalaman pembelajaran bulanan</p>
+<h2>Membership Bukan <span class="t2">Sekadar Akses Video.</span></h2>
+<div class="cycle" id="cycle"></div>
+<p class="note">Sesi live tertakluk kepada tahap membership masing-masing.</p>
+</div></section>
+
+<section class="sec c" id="faq"><div class="wrap"><p class="eyebrow">FAQ</p><h2>Soalan <span class="t2">Lazim</span></h2><div class="faq" id="faqs"></div></div></section>
+
+<section class="sec ice grid-bg shape c"><div class="wrap">
+<p class="eyebrow">Langkah seterusnya</p>
+<h2>Jangan Sekadar Belajar Trading.<span class="t2" style="display:block">Belajar Memahami Pasaran.</span></h2>
+<p class="soft" style="max-width:56ch">Mulakan perjalanan anda dengan pembelajaran yang lebih tersusun, praktikal dan berfokus kepada pembangunan kemahiran.</p>
+<a class="pill" href="#membership">Explore Membership Plans <span aria-hidden="true">→</span></a>
+</div></section>
+</main>
+
+<footer><div class="wrap"><div class="fg">
+<div><b id="fbrand" style="font:700 1rem 'Chakra Petch',sans-serif"></b><p class="soft" style="margin-top:10px">Pendidikan trading berstruktur. Bukan perkhidmatan signal.</p></div>
+<div><h4>Navigasi</h4><ul><li><a href="#about">About Coach Lim</a></li><li><a href="#hub">Learning Hub</a></li><li><a href="#cases">Market Case Studies</a></li><li><a href="#faq">FAQ</a></li></ul></div>
+<div><h4>Plans</h4><ul id="fplans"></ul></div>
+<div><h4>Hubungi &amp; Dasar</h4><ul><li><a id="wa" href="#">WhatsApp</a></li><li><a id="mail" href="#">Email</a></li><li><a id="tos" href="#">Terms and Conditions</a></li><li><a id="priv" href="#">Privacy Policy</a></li><li><a id="ref" href="#">Refund &amp; Cancellation Policy</a></li></ul></div>
+</div>
+<p class="disc" style="text-transform:none;letter-spacing:.02em">Trading, particularly leveraged Forex trading, involves substantial risk and may not be suitable for all investors. This membership provides educational content only and does not constitute financial or investment advice. No profits or trading outcomes are guaranteed.</p></div></footer>
+<a class="pill sticky" href="#membership">Join Membership <span aria-hidden="true">→</span></a>
+
+<script>
+/* ============ CONFIG — edit here only ============ */
+const CONFIG={
+  brand:"COACH LIM TRADING MEMBERSHIP",
+  whatsapp:"https://wa.me/",              // TODO: https://wa.me/60XXXXXXXXX
+  email:"mailto:",                        // TODO
+  legal:{terms:"#",privacy:"#",refund:"#"},
+  workshopsPerMonth:2,                    // TODO: owner to confirm
+  plans:[
+    {name:"Foundation",pos:"UNDERSTANDING",price:59,cta:"Join Foundation",checkout:"#TODO-foundation-checkout",
+     for:"Untuk beginner dan trader yang perlukan asas berstruktur.",
+     inc:["Structured Foundation Learning Library","Lapan modul pembelajaran teras","Nota & sumber pendidikan","Latihan praktikal & penilaian","Kajian kes trading","Akses komuniti ahli","Soal jawab pendidikan berasaskan komuniti","Penjejakan kemajuan"],exc:["Sesi coaching live","Mentoring peribadi"]},
+    {name:"Pro",pos:"APPLICATION",price:129,cta:"Upgrade to Pro",checkout:"#TODO-pro-checkout",recommended:true,
+     for:"Untuk trader yang mahu mentafsir dan mengaplikasikan konsep.",
+     inc:["Semua kandungan Foundation","Bahan pembelajaran pertengahan & lanjutan","Bengkel analisis pasaran praktikal","Bedah carta sebenar","Kajian kes lanjutan","Latihan aplikasi strategi","Workshop pendidikan live (cadangan: {w}/bulan, belum disahkan)"],exc:["Mentoring kumpulan kecil"]},
+    {name:"Elite",pos:"DEVELOPMENT",price:299,cta:"Apply for Elite",checkout:"#TODO-elite-application",
+     for:"Untuk trader yang mahu bimbingan lebih rapat dan pembangunan prestasi.",
+     inc:["Semua kandungan Pro","Mentoring kumpulan kecil (kapasiti terhad)","Semakan jurnal trading","Sesi strategy hot-seat","Maklum balas pendidikan peribadi","Penilaian kemajuan bulanan","Soal jawab pendidikan keutamaan"],exc:[]}]
+};
+/* ============ CONTENT ============ */
+const IC={book:"M5 4h13v16H7a2 2 0 01-2-2zM5 18a2 2 0 012-2h11",eye:"M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12zM12 9a3 3 0 100 6 3 3 0 000-6z",chart:"M3 3v18h18M7 15l4-5 3 3 5-7",branch:"M12 3v6M12 9l-6 6v6M12 9l6 6v6",target:"M12 3a9 9 0 100 18 9 9 0 000-18zM12 8a4 4 0 100 8 4 4 0 000-8z",list:"M4 6l2 2 3-3M4 14l2 2 3-3M12 7h8M12 15h8",layers:"M12 3l9 5-9 5-9-5zM3 13l9 5 9-5",shield:"M12 3l8 3v6c0 5-4 8-8 9-4-1-8-4-8-9V6z",msg:"M4 5h16v11H9l-5 4z"};
+const ico=k=>`<span class="orb"><svg viewBox="0 0 24 24"><path d="${IC[k]}"/></svg></span>`;
+const prob=[["Information Overload","Terlalu banyak maklumat dan strategi, tetapi tiada hala tuju pembelajaran yang jelas.","layers"],["Signal Dependency","Bergantung pada analisis orang lain tanpa memahami sebab di sebaliknya.","msg"],["Poor Risk Management","Membuka trade tanpa proses pengurusan risiko yang tersusun.","shield"],["Lack of Review","Mengulangi kesilapan yang sama tanpa memahami apa yang tidak kena.","list"]];
+const stages=[["Understand","Fahami konsep dan tujuannya.","book"],["Recognise","Kenal pasti konsep dalam keadaan pasaran sebenar.","eye"],["Interpret","Fahami apa yang mungkin pasaran sampaikan.","chart"],["Decide","Nilai tindakan dan senario yang mungkin.","branch"],["Execute","Gunakan pelan trading berstruktur dan urus risiko.","target"],["Review","Nilai keputusan, kesilapan dan kemajuan pembelajaran.","list"]];
+const hub=[["Forex Fundamentals","Bagaimana pasaran Forex berfungsi","Pasangan mata wang, pip, leverage dan platform dari asas."],["Market Structure","Membaca trend, julat dan peralihan","Kenal pasti struktur pasaran sebelum membuat keputusan."],["Price Behaviour","Apa yang candlestick cuba sampaikan","Tafsir tingkah laku harga tanpa bergantung pada indikator."],["Risk Management","Lindungi modal sebelum mengejar peluang","Saiz posisi, risiko setiap trade dan had kerugian."],["Trading Psychology","Emosi, tabiat dan disiplin","Kenapa trader membuat keputusan yang mereka tahu salah."],["Trading Strategies","Dari konsep kepada pelan trading","Menyusun pelan yang jelas dan boleh diulang."],["Trading Case Studies","Situasi pasaran dibedah langkah demi langkah","Latihan membuat keputusan dalam keadaan pasaran sebenar."],["Trader Development","Jurnal, semakan dan kemajuan","Menilai kesilapan dan membina kemahiran dari masa ke masa."]];
+const mods=[["The Trader’s Foundation","Mindset, matlamat dan peta perjalanan."],["Forex Mechanics & Trading Platform","Cara pasaran berfungsi dan penggunaan platform."],["Understanding Candlesticks & Price Behaviour","Membaca candlestick dan tingkah laku harga."],["Reading Market Conditions","Trend, julat dan perubahan keadaan pasaran."],["Trading Risk & Capital Protection","Saiz posisi dan perlindungan modal."],["Building a Basic Trading Plan","Pelan trading yang ringkas dan boleh diikuti."],["Trading Psychology & Behaviour","Emosi dan tabiat yang menjejaskan keputusan."],["Trading Journal & Performance Review","Mencatat, menyemak dan memperbaiki prestasi."]];
+const cases=[["Trend yang berubah menjadi julat","Pasangan & sesi: contoh","Bagaimana struktur pasaran berubah apabila momentum menurun."],["Menilai risiko sebelum entry","Konteks: contoh","Menilai ruang risiko sebelum memutuskan sama ada setup layak."],["Menyemak keputusan yang salah","Konteks: contoh","Membezakan proses yang baik daripada hasil yang kebetulan."]];
+const cycle=[["WEEK 1 — LEARN","Pelajari bahan pembelajaran bulanan."],["WEEK 2 — OBSERVE","Kaji kajian kes pasaran sebenar."],["WEEK 3 — APPLY","Selesaikan cabaran pembelajaran praktikal."],["WEEK 4 — REVIEW","Semak kemajuan dan kesilapan."]];
+const faqs=[
+["Adakah membership ini sesuai untuk beginner?","Ya. Foundation direka untuk beginner dengan laluan pembelajaran langkah demi langkah."],
+["Adakah saya perlu mempunyai pengalaman trading?","Tidak. Foundation bermula dari asas. Pro dan Elite lebih sesuai jika anda sudah faham asas trading."],
+["Adakah membership ini menyediakan trading signal?","Tidak. Kami tidak menjual signal. Kami membantu anda memahami pasaran dan membuat keputusan sendiri."],
+["Adakah saya perlu deposit dengan broker tertentu?","Tidak. Tiada deposit broker diwajibkan. Membership ini ialah produk pendidikan yang bebas."],
+["Adakah saya boleh belajar menggunakan akaun demo?","Ya. Anda digalakkan berlatih menggunakan akaun demo semasa belajar."],
+["Apakah perbezaan Foundation, Pro dan Elite?","Foundation: pembelajaran berstruktur. Pro: tambah aplikasi, bengkel dan sesi live pendidikan. Elite: tambah mentoring kumpulan kecil dan semakan jurnal. Lihat jadual perbandingan di atas."],
+["Adakah membership ini mempunyai live session?","Foundation tiada sesi live. Pro termasuk workshop pendidikan live dan Elite termasuk sesi mentoring kumpulan kecil. Kekerapan dan kapasiti tertakluk kepada pengesahan akhir."],
+["Bagaimana pembayaran bulanan berfungsi?","Pembayaran diproses melalui platform pembayaran rasmi kami. Terma sebenar tertakluk kepada platform tersebut."],
+["Bolehkah saya membatalkan subscription?","Pembatalan dan akses tertakluk kepada terma platform pembayaran dan Refund & Cancellation Policy. Sila semak sebelum melanggan."],
+["Adakah saya dijamin akan mendapat keuntungan?","Tidak. Tiada keuntungan atau keputusan trading dijamin. Kandungan ini untuk pendidikan sahaja dan trading melibatkan risiko kewangan yang besar."]];
+/* ============ CHART ART ============ */
+function rnd(s){return()=>(s=(s*9301+49297)%233280)/233280}
+function candles(seed,w,h,n){const r=rnd(seed);let o="",y=h*.55,st=w/n;for(let i=0;i<n;i++){const d=(r()-.5)*h*.26,up=d<0,x=st*i+st/2,top=Math.min(y,y+d),bh=Math.abs(d)+2,wk=r()*h*.06+3,c=up?"#278DE0":"#70C1F0";o+=`<path d="M${x} ${top-wk}V${top+bh+wk}" stroke="${c}" stroke-width="1.6"/><rect x="${x-st*.28}" y="${top}" width="${st*.56}" height="${bh}" fill="${c}" rx="1"/>`;y=Math.max(h*.18,Math.min(h*.82,y+d*.8-1))}return o}
+const chart=(seed,n=22,w=400,h=300)=>`<svg viewBox="0 0 ${w} ${h}" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="${w}" height="${h}" fill="#F0F8FF"/><g stroke="#145DA0" stroke-opacity=".08"><path d="M0 ${h*.25}H${w}M0 ${h*.5}H${w}M0 ${h*.75}H${w}"/></g>${candles(seed,w,h,n)}</svg>`;
+/* ============ RENDER ============ */
+const $=id=>document.getElementById(id),B=CONFIG.brand;
+document.title=B.replace(/\b(\w)(\w*)/g,(m,a,b)=>a+b.toLowerCase())+" | Understand The Market";
+$("brand").innerHTML=B.replace(/^(\S+ \S+) /,'$1<em>')+"</em>";$("fbrand").textContent=B;
+$("prob").innerHTML=prob.map(p=>`<article class="card pcard">${ico(p[2])}<h3>${p[0]}</h3><p>${p[1]}</p></article>`).join("");
+$("steps").innerHTML=stages.map((s,i)=>`<li class="step">${ico(s[2])}<div><div class="n">0${i+1}</div><h3>${s[0]}</h3><p>${s[1]}</p></div></li>`).join("");
+$("exchart").innerHTML=chart(77,30,400,230);
+$("hubgrid").innerHTML=hub.map((h,i)=>`<article class="card"><div class="th">${chart(i*13+5,20)}</div><div class="num">0${i+1} / 08 · ${h[0].toUpperCase()}</div><h3>${h[1]}</h3><p>${h[2]}</p><a class="lnk" href="#membership">Explore</a></article>`).join("");
+$("mods").innerHTML=mods.map(m=>`<li><b>${m[0]}</b><span>${m[1]}</span></li>`).join("");
+$("casegrid").innerHTML=cases.map((c,i)=>`<article class="card case"><div class="ba"><div><em>BEFORE</em>${chart(i*31+9,12,200,200)}</div><div><em>AFTER</em>${chart(i*31+19,12,200,200)}</div></div><p class="ctx" style="margin:14px 0 4px">${c[1].toUpperCase()} · PLACEHOLDER CARTA</p><h3>${c[0]}</h3><p class="lp"><b>Pelajaran utama:</b> ${c[2]}</p><a class="lnk" href="#membership">Explore case study</a></article>`).join("");
+$("plans").innerHTML=CONFIG.plans.map(p=>`<article class="plan${p.recommended?" rec":""}"><div class="pos">${p.pos}${p.recommended?" · DISYORKAN":""}</div><h3>${p.name}</h3><div class="price">RM${p.price}<small> / bulan</small></div><p>${p.for}</p><ul>${p.inc.map(x=>`<li>${x.replace("{w}",CONFIG.workshopsPerMonth)}</li>`).join("")}${p.exc.map(x=>`<li class="no">${x}</li>`).join("")}</ul><a class="pill" href="${p.checkout}" rel="noopener">${p.cta}</a></article>`).join("");
+const rows=[["Learning library & 8 modul",1,1,1],["Latihan & penilaian",1,1,1],["Akses komuniti",1,1,1],["Bahan lanjutan & bedah carta",0,1,1],["Workshop live pendidikan",0,1,1],["Mentoring kumpulan kecil",0,0,1],["Semakan jurnal & hot-seat",0,0,1],["Penilaian kemajuan bulanan",0,0,1]];
+$("cmp").innerHTML=`<tr><th>Ciri</th>${CONFIG.plans.map(p=>`<th>${p.name}</th>`).join("")}</tr>`+rows.map(r=>`<tr><td>${r[0]}</td>${r.slice(1).map(v=>`<td>${v?"✓":"—"}</td>`).join("")}</tr>`).join("");
+$("cycle").innerHTML=cycle.map(c=>`<div><b>${c[0]}</b><p>${c[1]}</p></div>`).join("");
+$("faqs").innerHTML=faqs.map(f=>`<details><summary>${f[0]}</summary><p>${f[1]}</p></details>`).join("");
+$("fplans").innerHTML=CONFIG.plans.map(p=>`<li><a href="#membership">${p.name} — RM${p.price}</a></li>`).join("");
+$("wa").href=CONFIG.whatsapp;$("mail").href=CONFIG.email;$("tos").href=CONFIG.legal.terms;$("priv").href=CONFIG.legal.privacy;$("ref").href=CONFIG.legal.refund;
+const bg=$("burger"),mn=$("menu"),setNav=o=>{mn.classList.toggle("open",o);bg.setAttribute("aria-expanded",o);bg.textContent=o?"✕":"☰"};
+bg.onclick=()=>setNav(!mn.classList.contains("open"));
+mn.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>setNav(false)));
+document.addEventListener("keydown",e=>{if(e.key==="Escape")setNav(false)});
+</script>
+</body>
+</html>
